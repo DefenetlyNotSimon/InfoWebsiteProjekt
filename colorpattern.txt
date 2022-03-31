@@ -1,0 +1,5 @@
+background: #FFCF7
+background2:#04E762
+text: #050505
+text highlight: #A1B5D8
+text highlight2: #738290
