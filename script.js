@@ -27,5 +27,19 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-  }
+}
 
+//Laden
+var lVar;
+
+function ladeFunktion(){
+  lVar = setTimeout(ShowPage, 1000);
+}
+
+function ShowPage(){
+  var laden = document.getElementById("laden");
+  var content= document.getElementById("content");
+
+  laden.classList.add("hidden");
+  content.classList.replace("hidden", "shownBlock")
+}
