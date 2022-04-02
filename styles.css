@@ -2,18 +2,23 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #FFFCF7;
+    background-color: #FEF9EF;
     color: #050505;
     padding: 0;
     margin: 0;
 }
 
 header{
-    background-color: #04E762;
+    background-color: #227C9D;
     position: sticky;
     top: 0;
-    z-index: 1;
-    height: 50px;
+    z-index: 2;
+    height: 100px;
+    transition: 0.2s;
+}
+
+section{
+    margin: 0;
 }
 
 .slider{
@@ -46,8 +51,8 @@ header{
     position: absolute;
     left: 50%;
     top: 50%;
-    z-index: 1;
-    border: 16px solid #FFFCF7;
+    z-index: 2;
+    border: 16px solid #FEF9EF;
     border-top: 16px solid #A1B5D8;
     border-radius: 50%;
     width: 120px;
@@ -89,10 +94,13 @@ header{
 /*NavBar*/
 nav{
     position: sticky;
-    top: 50;
-    background-color: #FFFCF7;
+    top: 50px;
+    background-color: #FEF9EF;
     margin-top: 0;
     padding-top: 0.1%;
+    padding-bottom:0.01%;
+    font-size: 40px;
+    transition: 0.2s;
 }
 nav ul{
     list-style: none;
@@ -104,16 +112,16 @@ nav ul{
 
 nav li{
     display: inline-block;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
 }
 
 nav ul a{
-    color: #050505;
+    color: #333333;
     text-decoration: none;
     font-weight: bold;
     padding: 0.5em;
-    background-color: #FFFCF7
+    
 }
 
 nav ul a:hover{
@@ -121,13 +129,13 @@ nav ul a:hover{
 }
 
 .current a{
-    color: #738290;
+    color: #227C9D;
 }
 
 
 /*Container Bilder*/
 .bilder-container {
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
 }
@@ -166,38 +174,67 @@ nav ul a:hover{
 
 /*Untertitel*/
 .text {
-    color: #FFFCF7;
+    color: #FEF9EF;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
+    display: none;
 }
 
 /*Auflistungstext*/
 .position {
-    color: #FFFCF7;
+    color: #FEF9EF;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
 }
 
+.mainBild {
+    color: #7A82AB;
+    font-size: 100px;
+    padding: 8px 12px;
+    position: absolute;
+    top: -80px;
+    left: 30px;
+    text-shadow: 1px 1px  black;
+}
+
+.mainBild a{
+    color:#FEF9EF;
+    position: relative;
+    top: -140px;
+    left: 10px;
+    font-size: 40px;
+    text-shadow: 1px 1px black;
+    padding: 0;
+    margin: 0;
+}
+
+
 /*Kreise/Punkte*/
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
+    z-index: 1;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #17C3B2;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
+.dots{
+    position: relative;
+    top: -30px;
+}
+
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: #7A82AB;
 }
 
 /*Animationen*/

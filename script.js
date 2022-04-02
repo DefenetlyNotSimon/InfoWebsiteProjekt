@@ -43,3 +43,33 @@ function ShowPage(){
   laden.classList.add("hidden");
   content.classList.replace("hidden", "shownBlock")
 }
+
+//onScroll
+
+var header;
+var nav;
+var delay = 800;
+var lastChange = 0;
+
+function scrollFunction() {
+  header = document.getElementById("header");
+  nav = document.getElementById("nav");
+  
+
+  if (document.body.scrollTop > 50 ) {
+    if (lastChange >= (Date.now())) return;
+    header.style.height = "50px";
+    nav.style.fontSize = "20px";
+    
+  } else {
+    if (lastChange >= (Date.now())) return;
+    header.style.height = "100px";
+    nav.style.fontSize = "40px";
+    
+  }
+  lastChange = Date.now();
+
+
+
+}
+
