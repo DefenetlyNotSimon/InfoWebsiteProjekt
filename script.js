@@ -33,7 +33,8 @@ function showSlides(n) {
 var lVar;
 
 function ladeFunktion(){
-  lVar = setTimeout(ShowPage, 1000);
+  lVar = setTimeout(ShowPage, 1);
+  window.scroll(0,0);
 }
 
 function ShowPage(){
@@ -43,3 +44,47 @@ function ShowPage(){
   laden.classList.add("hidden");
   content.classList.replace("hidden", "shownBlock")
 }
+
+//onScroll
+
+var header;
+var nav;
+var navli;
+
+
+function scrollFunction() {
+  header = document.getElementById("header");
+  nav = document.getElementById("nav");
+  navli = document.getElementById("navli");
+  
+
+  if (document.body.scrollTop > 50 ) { 
+    header.style.height = "50px";
+    nav.style.fontSize = "20px";
+	
+
+    
+  } else {
+    header.style.height = "100px";
+    nav.style.fontSize = "40px";
+	
+
+	
+    
+  }
+  
+   if (document.body.scrollTop > 500 ) { 
+
+	navli.style.paddingLeft = "0%";
+	navli.style.paddingRight = "0%";
+	nav.style.textAlign = "left";
+    
+  } else {
+	navli.style.paddingLeft = "1.5%";
+	navli.style.paddingRight = "1.5%";
+	nav.style.textAlign = "center";
+  }
+
+
+}
+
