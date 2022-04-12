@@ -95,25 +95,58 @@ section{
 	margin-right: 10%;
 }
 
+/*News*/
 .news{
 	list-style: none;
-	overflow: hi
 }
 
 .news li{
 	display: inline-block;
-	padding-top: 500px;
-	padding-left: 100px;
-	padding-right: 100px;
 	border: 1px solid black;
-	
+    width: 260px;
+    height: 540px;
+    transition: all  .2s ease-in-out;
+    text-align: center;
+    background-size:  260px 540px;
+
+}
+
+.news li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .news li a{
       display: inline-block;
-      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 200%;
+      color: #FEF9EF;
+      text-shadow: 1px 1px #227C9D;
+      margin-top: 450px;
+
+     
 }
 
+.news1{
+    background-image: url("img/news/luchse.jpg");
+    
+}
+
+.news2{
+    background-image: url("img/news/hbl.jpg");
+}
+
+.news3{
+    background-image: url("img/news/minden.jpg");
+}
+
+.news4{
+    background-image: url("img/news/thw.jpg");
+}
+
+.news5{
+    background-image: url("img/news/qualifikation.jpg");
+}
 
 /*NavBar*/
 nav{
