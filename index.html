@@ -4,7 +4,7 @@
     <title>Informatik Projekt - Handball</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    <script src="jquery-3.6.0.min.js"></script>
+    <script src="news.json"></script>
 </head>
 
 <body onload="currentSlide(1); ladeFunktion();" onscroll="scrollFunction(1000)">
@@ -92,11 +92,11 @@
 		<div class="mainArtikel">
 			<h2>Aktuelles</h2>
 			<ul class="news">
-				<li class = "news1" onClick="location.href = 'https://www.stern.de/gesellschaft/regional/handball-bundesliga-nach-niederlage--luchse-coach-kritisiert-team--31764054.html'"><a> Luchse-Coach kritisiert Team </a></li>
-				<li class = "news2" onClick="location.href ='https://www.sport1.de/news/handball/handball-bundesliga/2022/04/handball-top-stars-verlassen-hbl-richtung-norden-droht-ein-aderlass'"><a> Top-Stars verlassen HBL </a></li>
-				<li class = "news3" onClick="location.href ='https://www.sport1.de/news/handball/handball-bundesliga/2022/04/gwd-minden-torbrugge-wird-neuer-geschaftsfuhrer'"><a> Torbrügge neuer Minden-Chef </a></li>
-				<li class = "news4" onClick="location.href ='https://www.handball-world.news/o.red.r/news-1-1-1-141254.html'"><a> THW Kiel nun zweiter </a></li>
-				<li class = "news5" onClick="location.href ='https://www.badische-zeitung.de/kaum-vorbereitung-dhb-rechnet-trotzdem-mit-wm-qualifikation--211675754.html'"><a> WM ohne Vorbereitung? </a></li>
+				<li id = "news1" onclick="window.open('https://www.stern.de/gesellschaft/regional/handball-bundesliga-nach-niederlage--luchse-coach-kritisiert-team--31764054.html', 'blank')"><a> Luchse-Coach kritisiert Team </a></li>
+				<li id = "news2" onClick="window.open('https://www.sport1.de/news/handball/handball-bundesliga/2022/04/handball-top-stars-verlassen-hbl-richtung-norden-droht-ein-aderlass', 'blank')"><a> Top-Stars verlassen HBL </a></li>
+				<li id = "news3" onClick="window.open('https://www.sport1.de/news/handball/handball-bundesliga/2022/04/gwd-minden-torbrugge-wird-neuer-geschaftsfuhrer', 'blank')"><a> Torbrügge neuer Minden-Chef </a></li>
+				<li id = "news4" onClick="window.open('https://www.handball-world.news/o.red.r/news-1-1-1-141254.html', 'blank')"><a> THW Kiel nun zweiter </a></li>
+				<li id = "news5" onClick="window.open('https://www.badische-zeitung.de/kaum-vorbereitung-dhb-rechnet-trotzdem-mit-wm-qualifikation--211675754.html', 'blank')"><a> WM ohne Vorbereitung? </a></li>
 			</ul>
 		</div>
         </main>

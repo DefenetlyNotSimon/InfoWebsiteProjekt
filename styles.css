@@ -130,24 +130,24 @@ section{
      
 }
 
-.news1{
+#news1{
     background-image: url("img/news/luchse.jpg");
     
 }
 
-.news2{
+#news2{
     background-image: url("img/news/hbl.jpg");
 }
 
-.news3{
+#news3{
     background-image: url("img/news/minden.jpg");
 }
 
-.news4{
+#news4{
     background-image: url("img/news/thw.jpg");
 }
 
-.news5{
+#news5{
     background-image: url("img/news/qualifikation.jpg");
 }
 
