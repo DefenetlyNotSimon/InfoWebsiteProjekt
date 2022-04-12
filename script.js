@@ -33,7 +33,8 @@ function showSlides(n) {
 var lVar;
 
 function ladeFunktion(){
-  lVar = setTimeout(ShowPage, 1000);
+  lVar = setTimeout(ShowPage, 1);
+  window.scroll(0,0);
 }
 
 function ShowPage(){
@@ -48,27 +49,41 @@ function ShowPage(){
 
 var header;
 var nav;
-var delay = 800;
-var lastChange = 0;
+var navli;
+
 
 function scrollFunction() {
   header = document.getElementById("header");
   nav = document.getElementById("nav");
+  navli = document.getElementById("navli");
   
 
-  if (document.body.scrollTop > 50 ) {
-    if (lastChange >= (Date.now())) return;
+  if (document.body.scrollTop > 50 ) { 
     header.style.height = "50px";
     nav.style.fontSize = "20px";
+	
+
     
   } else {
-    if (lastChange >= (Date.now())) return;
     header.style.height = "100px";
     nav.style.fontSize = "40px";
+	
+
+	
     
   }
-  lastChange = Date.now();
+  
+   if (document.body.scrollTop > 500 ) { 
 
+	navli.style.paddingLeft = "0%";
+	navli.style.paddingRight = "0%";
+	nav.style.textAlign = "left";
+    
+  } else {
+	navli.style.paddingLeft = "1.5%";
+	navli.style.paddingRight = "1.5%";
+	nav.style.textAlign = "center";
+  }
 
 
 }
