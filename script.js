@@ -1,3 +1,7 @@
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
+script.type = 'text/javascript';
+
 
 //Slider
 let slideIndex = 1;
@@ -50,9 +54,10 @@ function ShowPage(){
 var header;
 var nav;
 var navli;
+var scroll;
 
 
-function scrollFunction() {
+function scrollFunction(scroll) {
   header = document.getElementById("header");
   nav = document.getElementById("nav");
   navli = document.getElementById("navli");
@@ -73,7 +78,7 @@ function scrollFunction() {
     
   }
   
-   if (document.body.scrollTop > 500 ) { 
+   if (document.body.scrollTop > scroll ) { 
 
 	navli.style.paddingLeft = "0%";
 	navli.style.paddingRight = "0%";
@@ -87,4 +92,5 @@ function scrollFunction() {
 
 
 }
+
 
