@@ -1,4 +1,4 @@
-background: #FEF9EF
+colorbackground: #FEF9EF
 background2:#227C9D
 text: #050505
 text highlight: #FFCB77
